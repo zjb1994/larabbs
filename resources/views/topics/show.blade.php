@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="topic-body">
-                        {!! $topic->body !!}
+                        {!! $topic->body = clean($topic->body, 'user_topic_body'); !!}
                     </div>
 
                     <div class="operate">
